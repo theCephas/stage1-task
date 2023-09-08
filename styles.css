@@ -49,3 +49,14 @@ p{
 a{
         color: green;
 }
+
+#currentDay{
+        font-size: 14px;
+        font-weight: bolder;
+}
+#currentUTC{
+        font-size: 14px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        color: rgb(243, 109, 131);
+}
