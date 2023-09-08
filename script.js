@@ -16,8 +16,9 @@ theDay.innerHTML = currentDay;
 const currentUTC = new Date();
 const hours = currentUTC.getUTCHours();
 const minutes = currentUTC.getUTCMinutes();
+const seconds = currentUTC.getUTCSeconds();
 
 // Targeting the vacant space for the current UTC time
 
 const theCurrentUTC = document.getElementById("currentUTC");
-theCurrentUTC.innerHTML = `${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+theCurrentUTC.innerHTML = `${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
