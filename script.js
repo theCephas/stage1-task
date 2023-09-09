@@ -2,7 +2,7 @@
 
 const currentDate = new Date();
 
-const dayOfWeek = currentDate.getDay();
+const dayOfWeek = currentDate.getUTCDay();
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const currentDay = daysOfWeek[dayOfWeek];
 
@@ -14,11 +14,9 @@ theDay.innerHTML = currentDay;
 // Getting the current UTC time 
 
 const currentUTC = new Date();
-const hours = currentUTC.getUTCHours();
-const minutes = currentUTC.getUTCMinutes();
-const seconds = currentUTC.getUTCSeconds();
 
+const currentUTCDay = Date.now();
 // Targeting the vacant space for the current UTC time
 
 const theCurrentUTC = document.getElementById("currentUTC");
-theCurrentUTC.innerHTML = `${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+theCurrentUTC.innerHTML = currentUTCDay; 
