@@ -35,20 +35,15 @@ img{
         font-weight: bold;
         border-radius: 10px;
 }
-.time{
-        display: flex;
-        flex-wrap: wrap;
-}
-.utc{
-        margin-left: 7px;
-        margin-right: 7px;
-}
+
 p{
         padding-bottom: 20px;
         font-size: 11px;
+        width: 200px;
 }
 a{
         color: green;
+        font-weight: bold;
 }
 
 #currentDay{
